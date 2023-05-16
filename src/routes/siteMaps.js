@@ -1,6 +1,6 @@
 export const dashboardRoutes = {
   label: 'Dashboard',
-  labelDisable: true,
+  labelDisable: false,
   children: [
     {
       name: 'Dashboard',
@@ -61,258 +61,230 @@ export const dashboardRoutes = {
   ]
 };
 export const appRoutes = {
-  label: 'app',
+  // label: 'app',
   children: [
     {
-      name: 'Calendar',
-      icon: 'calendar-alt',
-      to: '/app/calendar',
-      active: true
-    },
-    {
-      name: 'Chat',
-      icon: 'comments',
-      to: '/app/chat',
-      active: true
-    },
-    {
-      name: 'Email',
+      name: 'Dashboard',
       icon: 'envelope-open',
       active: true,
       children: [
         {
-          name: 'Inbox',
+          name: 'Home',
           to: '/email/inbox',
           active: true
         },
         {
-          name: 'Email detail',
+          name: 'Customer',
           to: '/email/email-detail',
           active: true
         },
         {
-          name: 'Compose',
+          name: 'Revenue report',
           to: '/email/compose',
+          active: true
+        },
+        {
+          name: 'Actionable',
+          to: '/email/compose',
+          active: true
+        },
+        {
+          name: 'Engagement',
+          to: '/dashboard/engagement',
+          active: true
+        },
+        {
+          name: 'EngagementV2',
+          to: '/dashboard/engagementv2',
           active: true
         }
       ]
     },
     {
-      name: 'Events',
+      name: 'My Tickets',
       icon: 'calendar-day',
       active: true,
       children: [
         {
-          name: 'Create an event',
-          to: '/events/create-an-event',
+          name: 'Assigned Tickets',
+          // to: '/events/create-an-event',
+          to: 'myTickets/assignedTickets',
           active: true
         },
         {
-          name: 'Event detail',
-          to: '/events/event-detail',
+          name: 'All Tickets',
+          to: '/myTickets/allTickets',
           active: true
         },
         {
-          name: 'Event list',
-          to: '/events/event-list',
-          active: true
-        }
-      ]
-    },
-    {
-      name: 'E Commerce',
-      icon: 'shopping-cart',
-      active: true,
-      children: [
-        {
-          name: 'Product',
-          active: true,
-          children: [
-            {
-              name: 'Product list',
-              to: '/e-commerce/product/product-list',
-              active: true
-            },
-            {
-              name: 'Product grid',
-              to: '/e-commerce/product/product-grid',
-              active: true
-            },
-            {
-              name: 'Product details',
-              to: '/e-commerce/product/product-details',
-              active: true
-            }
-          ]
-        },
-        {
-          name: 'Orders',
-          active: true,
-          children: [
-            {
-              name: 'Order list',
-              to: '/e-commerce/orders/order-list',
-              active: true
-            },
-            {
-              name: 'Order details',
-              to: '/e-commerce/orders/order-details',
-              active: true
-            }
-          ]
-        },
-        {
-          name: 'Customers',
-          to: '/e-commerce/customers',
-          active: true
-        },
-        {
-          name: 'Customer details',
-          to: '/e-commerce/customer-details',
-          active: true
-        },
-        {
-          name: 'Shopping cart',
-          to: '/e-commerce/shopping-cart',
-          active: true
-        },
-        {
-          name: 'Checkout',
-          to: '/e-commerce/checkout',
-          active: true
-        },
-        {
-          name: 'Billing',
-          to: '/e-commerce/billing',
-          active: true
-        },
-        {
-          name: 'Invoice',
-          to: '/e-commerce/invoice',
+          name: 'Stats',
+          to: '/myTickets/stats',
           active: true
         }
       ]
     },
     {
-      name: 'E Learning',
+    
+        name: 'Ivr call',
+        icon: 'poll',
+        to: '/ivrCall',
+        active: true
+      // name: 'IVR Calls',
+      // icon: 'shopping-cart',
+      // to:'/e-commerce/customers',
+      // active: true,
+      // children: [
+        // {
+        //   name: '',
+        //   to: '/e-commerce/customers',
+        //   active: true
+        // },
+        // {
+        //   name: 'Customer details',
+        //   to: '/e-commerce/customer-details',
+        //   active: true
+        // },
+        // {
+        //   name: 'Shopping cart',
+        //   to: '/e-commerce/shopping-cart',
+        //   active: true
+        // },
+        // {
+        //   name: 'Checkout',
+        //   to: '/e-commerce/checkout',
+        //   active: true
+        // },
+        // {
+        //   name: 'Billing',
+        //   to: '/e-commerce/billing',
+        //   active: true
+        // },
+        // {
+        //   name: 'Invoice',
+        //   to: '/e-commerce/invoice',
+        //   active: true
+        // }
+      // ]
+    },
+    {
+      name: 'Next Call',
       icon: 'graduation-cap',
       active: true,
       badge: {
-        type: 'success',
-        text: 'New'
+        type: 'success'
       },
       children: [
-        {
-          name: 'Course',
-          active: true,
-          children: [
-            {
-              name: 'Course list',
-              to: '/e-learning/course/course-list',
-              active: true
-            },
-            {
-              name: 'Course grid',
-              to: '/e-learning/course/course-grid',
-              active: true
-            },
-            {
-              name: 'Course details',
-              to: '/e-learning/course/course-details',
-              active: true
-            },
-            {
-              name: 'Create a course',
-              to: '/e-learning/course/create-a-course',
-              active: true
-            }
-          ]
-        },
-        {
-          name: 'Student overview',
-          to: '/e-learning/student-overview',
-          active: true
-        },
-        {
-          name: 'Trainer profile',
-          to: '/e-learning/trainer-profile',
-          active: true
-        }
+        // {
+        //   name: 'Student overview',
+        //   to: '/e-learning/student-overview',
+        //   active: true
+        // },
+        // {
+        //   name: 'Trainer profile',
+        //   to: '/e-learning/trainer-profile',
+        //   active: true
+        // }
       ]
     },
+    // {
+    //   name: 'Customers feedback',
+    //   icon: ['fab', 'trello'],
+    //   to: '/app/kanban',
+    //   active: true
+    // },
     {
-      name: 'Kanban',
-      icon: ['fab', 'trello'],
-      to: '/app/kanban',
+      name: 'Customer Feedback',
+      icon: 'poll',
+      to: '/customerFeedback',
       active: true
+      // name: 'Customer feedback',
+      // icon: 'share-alt',
+      // active: true,
+      // children: [
+        // {
+        //   name: 'Feed',
+        //   to: '/social/feed',
+        //   active: true
+        // },
+        // {
+        //   name: 'Activity log',
+        //   to: '/social/activity-log',
+        //   active: true
+        // },
+        // {
+        //   name: 'Notifications',
+        //   to: '/social/notifications',
+        //   active: true
+        // },
+        // {
+        //   name: 'Followers',
+        //   to: '/social/followers',
+        //   active: true
+        // }
+      // ]
     },
     {
-      name: 'Social',
-      icon: 'share-alt',
+      name: 'Customers Chats',
+      icon: 'ticket-alt',
       active: true,
       children: [
-        {
-          name: 'Feed',
-          to: '/social/feed',
-          active: true
-        },
-        {
-          name: 'Activity log',
-          to: '/social/activity-log',
-          active: true
-        },
-        {
-          name: 'Notifications',
-          to: '/social/notifications',
-          active: true
-        },
-        {
-          name: 'Followers',
-          to: '/social/followers',
-          active: true
-        }
+        // {
+        //   name: 'Table view',
+        //   to: '/support-desk/table-view',
+        //   active: true
+        // },
+        // {
+        //   name: 'Card view',
+        //   to: '/support-desk/card-view',
+        //   active: true
+        // },
+        // {
+        //   name: 'Contacts',
+        //   to: '/support-desk/contacts',
+        //   active: true
+        // },
+        // {
+        //   name: 'Contact details',
+        //   to: '/support-desk/contact-details',
+        //   active: true
+        // },
+        // {
+        //   name: 'Tickets preview',
+        //   to: '/support-desk/tickets-preview',
+        //   active: true
+        // },
+        // {
+        //   name: 'Quick links',
+        //   to: '/support-desk/quick-links',
+        //   active: true
+        // },
+        // {
+        //   name: 'Reports',
+        //   to: '/support-desk/reports',
+        //   active: true
+        // }
       ]
     },
     {
-      name: 'Support desk',
+      name: 'Engagements Report',
       icon: 'ticket-alt',
       active: true,
       children: [
         {
-          name: 'Table view',
-          to: '/support-desk/table-view',
+          name: 'Engagement Reports',
+          to: '/engagementReport/reports',
           active: true
         },
         {
-          name: 'Card view',
-          to: '/support-desk/card-view',
+          name: 'Engagement Stats',
+          to: '/engagementReport/stats',
           active: true
         },
         {
-          name: 'Contacts',
-          to: '/support-desk/contacts',
+          name: 'Engagement Summary',
+          to: '/engagementReport/summary',
           active: true
         },
-        {
-          name: 'Contact details',
-          to: '/support-desk/contact-details',
-          active: true
-        },
-        {
-          name: 'Tickets preview',
-          to: '/support-desk/tickets-preview',
-          active: true
-        },
-        {
-          name: 'Quick links',
-          to: '/support-desk/quick-links',
-          active: true
-        },
-        {
-          name: 'Reports',
-          to: '/support-desk/reports',
-          active: true
-        }
       ]
     }
   ]
@@ -1301,9 +1273,9 @@ export const documentationRoutes = {
 };
 
 export default [
-  dashboardRoutes,
-  appRoutes,
-  pagesRoutes,
-  modulesRoutes,
-  documentationRoutes
+  // dashboardRoutes,
+  appRoutes
+  // pagesRoutes,
+  // modulesRoutes,
+  // documentationRoutes
 ];
