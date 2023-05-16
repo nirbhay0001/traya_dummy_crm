@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterData from './FilterData';
-import '../../../../src/main.css';
+import '../../../main.css';
 
 function Stats() {
   return (

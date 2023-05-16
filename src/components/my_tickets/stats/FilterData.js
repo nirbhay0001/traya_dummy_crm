@@ -1,5 +1,6 @@
 import Form from 'react-bootstrap/Form';
-import '../../../../src/main.css';
+// import '../../../../src/main.css';
+import '../../../main.css';
 // import 'bootstrap-icons/font/bootstrap-icons.css';
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
