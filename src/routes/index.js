@@ -6,7 +6,7 @@ import ErrorLayout from "../layouts/ErrorLayout";
 import WizardAuth from "components/authentication/wizard/WizardAuth";
 import Landing from "components/pages/landing/Landing";
 
-import CustomerFeedback from "components/customer_feeback/CustomerFeedback";
+import CustomerFeedback from "components/customer_feedback/CustomerFeedback";
 import IvrCall from "components/ivr_calls/IvrCall";
 import Engagement from "components/dashboards/engagement/Engagement";
 import EngagementV2 from "components/dashboards/engagement_v2/EngagemenV2";
